@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+
+import Search from "../PageObjects/searchContent"
 describe('search content & check content detail page', ()=>{
 
 
@@ -11,23 +13,17 @@ describe('search content & check content detail page', ()=>{
 
     it('Test case one', function(){
 
-            cy.get('#onesignal-slidedown-cancel-button').click()
+        cy.fixture('example').then((data) =>{
+            const sr=new Search()
+            sr.clickNotification()
+            sr.searchFunction(data.searchFilm)
+            sr.selectDropdown()
+            sr.verifySearch(data.expectedFilm)
 
-            // let expName = 'Mr robot'
-            let search = cy.get('#search > .search-content > form > .form-control')
-            search.click()
-            search.type('Mr Robot')
-            cy.wait(3000)
-    
-            cy.get('#search > .search-content > .nav >')
-                .eq(0)
-                .click()
-            cy.get('.heading-name > a')
-                .should('be.visible')
-                .should('have.text', 'Mr. Robot')   
+        })
+
+
+
 
     })
-
-    
-
 })
