@@ -1,11 +1,3 @@
-// const cypress = require("cypress");
-// const { describe } = require("mocha");
-
-// const cypress = require("cypress")
-// const { before } = require("cypress/types/lodash")
-
-// const { it } = require("mocha")
-
 describe('search content & check content detail page', ()=>{
 
 /*
@@ -41,44 +33,7 @@ describe('search content & check content detail page', ()=>{
             .click()
         cy.get('.heading-name > a')
             .should('be.visible')
-            .should('have.text', 'Mr. Robot')    
-        
-            
-        // cy.get('nav.search-result-pop.search-suggest')
-
-
-        // cy.get('#search > .search-content > .nav > .nav-bottom').click()
-        // let filmName = cy.get(':nth-child(1) > .film-detail > .film-name > a')
-        //     filmName.click()
-        // let confirmFilmName = cy.get('.heading-name > a')
-        //     confirmFilmName.should('be.visible')
-        //     confirmFilmName.should('have.text', 'Mr. Robot')
-
-
-
-        // cy.get('nav search-result-pop search-suggest').each(($el, index, $list) =>{
-        //     if($el.text()=='Mr. Robot')
-        //     {
-        //         cy.wrap($el).click()
-        //     }
-        // })
-        
-        // cy.get('#search > .search-content > .nav >').contains('Mr Robot').click()
-        // let expName = 'Mr Robot'
-        // cy.get
-        
-
-            
-
-
-        // cy.fixture("example").then((word)=>{
-        //     let input = cy.get("input[title='Search']")
-        //     input.type(word.search).type('{enter}')
-        //     // cy.type('{enter}')
-            
-
-        // })
-
+            .should('have.text', 'Mr. Robot')     
 
     })
 
