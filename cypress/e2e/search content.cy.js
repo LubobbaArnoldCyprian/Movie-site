@@ -27,19 +27,47 @@ describe('search content & check content detail page', ()=>{
     })
 
     it('Test case one', function(){
-        cy.visit("https://google.com")
-        cy.fixture("example").then((word)=>{
-            let input = cy.get("input[title='Search']")
-            input.type(word.search).type('{enter}')
-            // cy.type('{enter}')
+        cy.visit("https://www3.zoechip.com/")
+        cy.get('#onesignal-slidedown-cancel-button').click()
+
+        // let expName = 'Mr robot'
+        let search = cy.get('#search > .search-content > form > .form-control')
+        search.click()
+        search.type('Mr Robot')
+        cy.get('#search > .search-content > .nav > .nav-bottom').click()
+        let filmName = cy.get(':nth-child(1) > .film-detail > .film-name > a')
+            filmName.click()
+        let confirmFilmName = cy.get('.heading-name > a')
+            confirmFilmName.should('be.visible')
+            confirmFilmName.should('have.text', 'Mr. Robot')
+
+
+
+
+        
+
+        // cy.get('#search > .search-content > .nav >').each(($el, index, $list) =>{
+        //     if($el.text()=='Mr Robot')
+        //     {
+        //         cy.wrap($el).click()
+        //     }
+        // })
+        
+        // cy.get('#search > .search-content > .nav >').contains('Mr Robot').click()
+        // let expName = 'Mr Robot'
+        // cy.get
+        
+
             
 
-        })
-        // cy.get("input[title='Search']").type("search")
-        // cy.title().should('eq','Electronics, Cars, Fashion, Collectibles & More | eBay')
-        // cy.get('a').contains('Home').click()
-        // cy.get("input[placeholder='Enter keywords...']").type('gggggggggggggfdffffff')
-        // cy.get(".form-control search-input").type('abcd')
+
+        // cy.fixture("example").then((word)=>{
+        //     let input = cy.get("input[title='Search']")
+        //     input.type(word.search).type('{enter}')
+        //     // cy.type('{enter}')
+            
+
+        // })
 
 
     })
