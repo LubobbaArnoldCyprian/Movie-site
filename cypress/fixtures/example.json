@@ -2,6 +2,7 @@
   "username": "U",
   "email": "hello@cypress.io",
   "body": "Fixtures are a great way to mock data for responses to routes",
-  "url": "https://www.google.com",
-  "film_text": "hello world"
+  "film_text": "hello world",
+  "baseurl": "https://www3.zoechip.com"
+  
 }
