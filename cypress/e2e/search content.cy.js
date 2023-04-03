@@ -34,20 +34,30 @@ describe('search content & check content detail page', ()=>{
         let search = cy.get('#search > .search-content > form > .form-control')
         search.click()
         search.type('Mr Robot')
-        cy.get('#search > .search-content > .nav > .nav-bottom').click()
-        let filmName = cy.get(':nth-child(1) > .film-detail > .film-name > a')
-            filmName.click()
-        let confirmFilmName = cy.get('.heading-name > a')
-            confirmFilmName.should('be.visible')
-            confirmFilmName.should('have.text', 'Mr. Robot')
+        cy.wait(3000)
 
-
-
-
+        cy.get('#search > .search-content > .nav >')
+            .eq(0)
+            .click()
+        cy.get('.heading-name > a')
+            .should('be.visible')
+            .should('have.text', 'Mr. Robot')    
         
+            
+        // cy.get('nav.search-result-pop.search-suggest')
 
-        // cy.get('#search > .search-content > .nav >').each(($el, index, $list) =>{
-        //     if($el.text()=='Mr Robot')
+
+        // cy.get('#search > .search-content > .nav > .nav-bottom').click()
+        // let filmName = cy.get(':nth-child(1) > .film-detail > .film-name > a')
+        //     filmName.click()
+        // let confirmFilmName = cy.get('.heading-name > a')
+        //     confirmFilmName.should('be.visible')
+        //     confirmFilmName.should('have.text', 'Mr. Robot')
+
+
+
+        // cy.get('nav search-result-pop search-suggest').each(($el, index, $list) =>{
+        //     if($el.text()=='Mr. Robot')
         //     {
         //         cy.wrap($el).click()
         //     }
