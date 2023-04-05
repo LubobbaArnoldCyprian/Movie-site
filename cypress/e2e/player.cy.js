@@ -1,27 +1,29 @@
-/// <reference types="cypress" />
+// import Search from "../PageObjects/player"
 
-import Search from "../PageObjects/searchContent"
+import { searchMovie } from "../pageObjects/player"
 
 describe('search content & check content detail page', ()=>{
 
 
-    before(function(){
+    beforeEach(function(){
         cy.fixture('example').then((access) =>{
             cy.visit(access.baseurl)
 
         })
     })
 
-    it('Test case one', function(){
+
+    it.only('player', function(){
 
         cy.fixture('example').then((data) =>{
-            const sr=new Search()
+
+            const sr = new Search()
             sr.clickNotification()
             sr.searchFunction(data.searchFilm)
             sr.selectDropdown()
             sr.verifySearch(data.expectedFilm)
-
         })
 
-    })
+})
+
 })
