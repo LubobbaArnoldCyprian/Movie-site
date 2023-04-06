@@ -1,32 +1,34 @@
-class Search{
+import locators from "./locators"
 
-    btnNotification= '#onesignal-slidedown-cancel-button'
-    txtSearch= '#search > .search-content > form > .form-control'
-    dropDown= '#search > .search-content > .nav >'
-    verifySearchResult = '.heading-name > a'
 
-    clickNotification(){
-        cy.get(this.btnNotification).click()
-    }
+const notification = () =>{
+    cy.get(locators.btnNotification).click()
 
-    searchFunction(searchFilm){
-        cy.get(this.txtSearch)
-            .click()
-            .type(searchFilm)
-    }
-
-    selectDropdown(){
-        cy.get(this.dropDown)
-            .eq(0)
-            .click()
-
-    }
-
-    verifySearch(expectedFilm){
-        cy.get(this.verifySearchResult)
-                .should('be.visible')
-                .should('have.text', expectedFilm)
-    }
 }
 
-export default Search
+const filmSearch = (searchFilm) =>{
+    cy.get(locators.txtSearch)
+    .click()
+    .type(searchFilm)
+   
+}
+
+const drpDown = () =>{
+    cy.get(locators.dropDown)
+    .eq(0)
+    .click()
+}
+
+const verifyMovie = (expectedFilm) =>{
+    cy.get(locators.verifySearchResult)
+    .should('be.visible')
+    .should('have.text', expectedFilm)
+}
+
+
+export default {
+    notification,
+    filmSearch,
+    drpDown,
+    verifyMovie
+}

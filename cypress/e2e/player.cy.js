@@ -1,6 +1,7 @@
 // import Search from "../PageObjects/player"
 
-import { searchMovie } from "../pageObjects/player"
+import player from "../pageObjects/player"
+import searchContent from "../pageObjects/searchContent"
 
 describe('search content & check content detail page', ()=>{
 
@@ -13,16 +14,20 @@ describe('search content & check content detail page', ()=>{
     })
 
 
-    it.only('player', function(){
+    it('player', function(){
 
         cy.fixture('example').then((data) =>{
+            
+            searchContent.notification()
+            searchContent.filmSearch(data.searchFilm)
+            searchContent.drpDown()
+            searchContent.verifyMovie(data.expectedFilm)
 
-            const sr = new Search()
-            sr.clickNotification()
-            sr.searchFunction(data.searchFilm)
-            sr.selectDropdown()
-            sr.verifySearch(data.expectedFilm)
         })
+        //
+        player.watchNow()
+    
+
 
 })
 
