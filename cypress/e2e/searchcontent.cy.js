@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import Search from "../PageObjects/searchContent"
+// import Search from "../PageObjects/searchContent"
 
-import searchContent from "../PageObjects/searchContent"
+import searchContent from "./PageObjects/searchContent"
 
 describe('search content & check content detail page', ()=>{
 
