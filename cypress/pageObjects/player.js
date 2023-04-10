@@ -9,20 +9,16 @@ const watchNow = () =>{
     cy.get('.watching > .container').scrollIntoView()
     cy.wait(8000)
 
-    // cy.get('#iframe-embed')
-    //     .should('be.visible')
-    //     .then(cy.wrap)
+    cy.get('#iframe-embed')
+        .should('be.visible')
+        .then(cy.wrap)
+
+    cy.get('#iframe-embed')
+        .find('.vjs-big-play-button')
+        .should('be.visible')
+        .click()
 
 
-    cy.get('#iframe-embed').then(function($ele){
-        cy.reload()
-        // cy.get('.vjs-big-play-button').click( { force: true })
-
-        var tax = $ele.contents().find(".vjs-big-play-button")
-        cy.wrap(tax).click()
-    })
- 
-    
 }
 
 
