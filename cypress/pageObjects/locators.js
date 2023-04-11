@@ -8,6 +8,9 @@ const verifySearchResult = '.heading-name > a'
 //Player.
 
 const watchNow = '.dp-i-c-stick > .btn-focus'
+const sharingBanner = '.modal-content > .modal-header > .close >'
+const changeServer = '#watch-9080962'
+const playerInView = '.watching > .container'
 
 
 export default {
@@ -18,7 +21,10 @@ export default {
 
     //
 
-    watchNow
+    watchNow,
+    sharingBanner,
+    changeServer,
+    playerInView
 
 
 
