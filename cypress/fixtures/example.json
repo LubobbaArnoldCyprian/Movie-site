@@ -7,6 +7,10 @@
   "searchFilm":"Wickensburg",
   "expectedFilm":"Wickensburg",
   "expectedAction":"Action Movies and TV Shows",
-  "expectAction":"Action"
+  "expectAction":"Action",
+  "expectedAdventure":"Adventure Movies and TV Shows",
+  "expectAdventure":"Adventure",
+  "expectedAnimation":"Animation Movies and TV Shows",
+  "expectAnimation":"Animation"
   
 }

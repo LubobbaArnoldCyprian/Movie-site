@@ -17,10 +17,27 @@ describe('search content & check content detail page', ()=>{
         cy.fixture('example').then((data) =>{
            genres.genreAction()
            genres.genreVerify(data.expectedAction)
-           genres.genreActionFilmVerify(data.expectAction)
-
-        
+           genres.genreActionFilmVerify(data.expectAction)        
         })
        
     })
+
+    it('Adventure', function(){
+        cy.fixture('example').then((data) =>{
+            genres.genreAdventure()
+            genres.genreVerify(data.expectedAdventure)
+            genres.genreAdventureFilmVerify(data.expectAdventure)
+        })
+    })
+
+    
+        it('Animation', function(){
+        cy.fixture('example').then((data) =>{
+            genres.genreAnimation()
+            genres.genreVerify(data.expectedAnimation)
+            genres.genreAnimationFilmVerify(data.expectAnimation)
+        })
+    })
+
+    
 })

@@ -6,11 +6,12 @@ const genreMenu = () =>{
     
 }
 
+// Action
 const genreAction = () =>{
-    cy.get(locators.genreAction).click() // Action
+    cy.get(locators.genreAction).click() 
 
 }
-const genreVerify = (expectedAction, expectAction) =>{
+const genreVerify = (expectedAction) =>{
    
     cy.get(locators.genreVerify)
         .should('be.visible')
@@ -30,6 +31,44 @@ const genreActionFilmVerify = (expectAction) =>{
 
 }
 
+//Adventure
+
+const genreAdventure = () =>{
+    cy.get(locators.genreAdventure).click()  
+
+}
+
+const genreAdventureFilmVerify = (expectAdventure) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreAdventureFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectAdventure)
+
+}
+
+// Animation
+const genreAnimation = () =>{
+    cy.get(locators.genreAnimation).click()
+
+}
+
+const genreAnimationFilmVerify = (expectAnimation) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreAnimationFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectAnimation)
+
+}
+
+
 
 
 export default{
@@ -37,8 +76,16 @@ export default{
     genreMenu,
     genreAction,
     genreVerify,
-    genreActionFilmVerify
+    genreActionFilmVerify,
 
-    //
+
+    // Adventure
+
+    genreAdventure,
+    genreAdventureFilmVerify,
+
+    // Animation
+    genreAnimation,
+    genreAnimationFilmVerify
 
 }
