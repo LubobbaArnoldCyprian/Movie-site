@@ -5,6 +5,8 @@
   "film_text": "hello world",
   "baseurl": "https://www3.zoechip.com",
   "searchFilm":"Wickensburg",
-  "expectedFilm":"Wickensburg"
+  "expectedFilm":"Wickensburg",
+  "expectedAction":"Action Movies and TV Shows",
+  "expectAction":"Action"
   
 }
