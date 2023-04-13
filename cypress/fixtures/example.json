@@ -11,6 +11,8 @@
   "expectedAdventure":"Adventure Movies and TV Shows",
   "expectAdventure":"Adventure",
   "expectedAnimation":"Animation Movies and TV Shows",
-  "expectAnimation":"Animation"
+  "expectAnimation":"Animation",
+  "expectedRomance":"Romance Movies and TV Shows",
+  "expectRomance":"Romance"
   
 }

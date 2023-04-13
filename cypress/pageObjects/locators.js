@@ -34,7 +34,10 @@ const genreAdventureFilmVerify = ':nth-child(2) > [href="/genre/adventure"]'
 const genreAnimation = '#sidebar_subs_genre > .nav > :nth-child(4) > .nav-link'
 const genreAnimationFilmVerify = ':nth-child(2) > [href="/genre/animation"]'
 
+// romance
 
+const genreRomance = '#sidebar_subs_genre > .nav > :nth-child(19) > .nav-link'
+const genreRomanceFilmVerify = ':nth-child(2) > [href="/genre/romance"]'
 
 
 export default {
@@ -68,7 +71,12 @@ export default {
 
     // Animation
     genreAnimation,
-    genreAnimationFilmVerify
+    genreAnimationFilmVerify,
+
+    // Romance
+
+    genreRomance,
+    genreRomanceFilmVerify
 
 
 

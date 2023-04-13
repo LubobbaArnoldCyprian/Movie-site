@@ -31,13 +31,23 @@ describe('search content & check content detail page', ()=>{
     })
 
     
-        it('Animation', function(){
+    it('Animation', function(){
         cy.fixture('example').then((data) =>{
             genres.genreAnimation()
             genres.genreVerify(data.expectedAnimation)
             genres.genreAnimationFilmVerify(data.expectAnimation)
         })
     })
+
+    it('Romance', function(){
+        cy.fixture('example').then((data) =>{
+            genres.genreRomance()
+            genres.genreVerify(data.expectedRomance)
+            genres.genreRomanceFilmVerify(data.expectRomance)
+        })
+    })
+
+
 
     
 })
