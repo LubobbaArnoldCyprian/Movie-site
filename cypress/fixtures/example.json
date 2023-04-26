@@ -13,6 +13,10 @@
   "expectedAnimation":"Animation Movies and TV Shows",
   "expectAnimation":"Animation",
   "expectedRomance":"Romance Movies and TV Shows",
-  "expectRomance":"Romance"
+  "expectRomance":"Romance",
+  "expectedBiography":"Biography Movies and TV Shows",
+  "expectBiography":"Biography",
+  "expectedComedy":"Comedy Movies and TV Shows",
+  "expectComedy":"Comedy"
   
 }

@@ -39,6 +39,15 @@ const genreAnimationFilmVerify = ':nth-child(2) > [href="/genre/animation"]'
 const genreRomance = '#sidebar_subs_genre > .nav > :nth-child(19) > .nav-link'
 const genreRomanceFilmVerify = ':nth-child(2) > [href="/genre/romance"]'
 
+// biography
+const genreBiography = '#sidebar_subs_genre > .nav > :nth-child(5) > .nav-link'
+const genreBiographyFilmVerify = ':nth-child(2) > [href="/genre/biography"]'
+
+
+// comedy
+
+const genreComedy = '#sidebar_subs_genre > .nav > :nth-child(6) > .nav-link'
+const genreComedyFilmVerify = ':nth-child(2) > [href="/genre/comedy"]'
 
 export default {
     btnNotification,
@@ -76,7 +85,16 @@ export default {
     // Romance
 
     genreRomance,
-    genreRomanceFilmVerify
+    genreRomanceFilmVerify,
+
+    // Biography
+    genreBiography,
+    genreBiographyFilmVerify,
+
+    // Comedy
+    genreComedy,
+    genreComedyFilmVerify
+
 
 
 

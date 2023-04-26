@@ -86,6 +86,47 @@ cy.get(locators.genreRomanceFilmVerify)
 }
 
 
+// Biography
+const genreBiography = () =>{
+    cy.get(locators.genreBiography).click()
+
+}
+
+const genreBiographyFilmVerify = (expectBiography) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreBiographyFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectBiography)
+
+}
+
+
+
+// Comedy
+const genreComedy = () =>{
+    cy.get(locators.genreComedy).click()
+
+}
+
+const genreComedyFilmVerify = (expectComedy) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreComedyFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectComedy)
+
+}
+
+
+
+
 export default{
     //action
     genreMenu,
@@ -104,6 +145,14 @@ export default{
 
     //Romance
     genreRomance,
-    genreRomanceFilmVerify
+    genreRomanceFilmVerify,
+
+    // Biography
+    genreBiography,
+    genreBiographyFilmVerify,
+
+    //comedy
+    genreComedy,
+    genreComedyFilmVerify,
 
 }

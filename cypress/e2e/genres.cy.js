@@ -47,6 +47,23 @@ describe('search content & check content detail page', ()=>{
         })
     })
 
+    it('Biography', function(){
+        cy.fixture('example').then((data) =>{
+            genres.genreBiography()
+            genres.genreVerify(data.expectedBiography)
+            genres.genreBiographyFilmVerify(data.expectBiography)
+        })
+    })
+
+    it('Comedy', function(){
+        cy.fixture('example').then((data) =>{
+            genres.genreComedy()
+            genres.genreVerify(data.expectedComedy)
+            genres.genreComedyFilmVerify(data.expectComedy)
+        })
+    })
+
+
 
 
     
