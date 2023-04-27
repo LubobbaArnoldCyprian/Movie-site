@@ -127,6 +127,123 @@ cy.get(locators.genreComedyFilmVerify)
 
 
 
+// Crime
+const genreCrime = () =>{
+    cy.get(locators.genreCrime).click()
+
+}
+
+const genreCrimeFilmVerify = (expectCrime) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreCrimeFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectCrime)
+
+}
+
+
+// Documentary
+const genreDocumentary = () =>{
+    cy.get(locators.genreDocumentary).click()
+
+}
+
+const genreDocumentaryFilmVerify = (expectDocumentary) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreDocumentaryFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectDocumentary)
+
+}
+
+
+// Drama
+const genreDrama = () =>{
+    cy.get(locators.genreDrama).click()
+
+}
+
+const genreDramaFilmVerify = (expectDrama) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreDramaFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectDrama)
+
+}
+
+
+// Family
+const genreFamily = () =>{
+    cy.get(locators.genreFamily).click()
+
+}
+
+const genreFamilyFilmVerify = (expectFamily) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreFamilyFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectFamily)
+
+}
+
+
+// Fantasy
+const genreFantasy = () =>{
+    cy.get(locators.genreFantasy).click()
+
+}
+
+const genreFantasyFilmVerify = (expectFantasy) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreFantasyFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectFantasy)
+
+}
+
+
+// History
+const genreHistory = () =>{
+    cy.get(locators.genreHistory).click()
+
+}
+
+const genreHistoryFilmVerify = (expectHistory) =>{
+    cy.get(locators.filmposter)
+    .should('be.visible')
+    .click()
+cy.get(locators.actionScroll).scrollIntoView()
+        
+cy.get(locators.genreHistoryFilmVerify)
+    .should('be.visible')
+    .should('have.text', expectHistory)
+
+}
+
+
+
+
+
 export default{
     //action
     genreMenu,
@@ -154,5 +271,37 @@ export default{
     //comedy
     genreComedy,
     genreComedyFilmVerify,
+
+    // Crime 
+    genreCrime,
+    genreCrimeFilmVerify,
+
+    // Documentary
+
+    genreDocumentary,
+    genreDocumentaryFilmVerify,
+    
+    // Drama
+    
+    genreDrama,
+    genreDramaFilmVerify,
+
+    // Family
+
+    genreFamily,
+    genreFamilyFilmVerify,
+    
+    // Fantasy
+    
+    genreFantasy,
+    genreFantasyFilmVerify,
+    
+    // History
+    
+    genreHistory,
+    genreHistoryFilmVerify
+    
+
+
 
 }

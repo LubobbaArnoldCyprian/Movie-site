@@ -17,6 +17,21 @@
   "expectedBiography":"Biography Movies and TV Shows",
   "expectBiography":"Biography",
   "expectedComedy":"Comedy Movies and TV Shows",
-  "expectComedy":"Comedy"
+  "expectComedy":"Comedy",
+  "expectedCrime":"Crime Movies and TV Shows",
+  "expectCrime":"Crime",
+  "expectedDocumentary":"Documentary Movies and TV Shows",
+  "expectDocumentary":"Documentary",
+  "expectedDrama":"Drama Movies and TV Shows",
+  "expectDrama":"Drama",
+
+  "expectedFamily":"Family Movies and TV Shows",
+  "expectFamily":"Family",
+  "expectedFantasy":"Fantasy Movies and TV Shows",
+  "expectFantasy":"Fantasy",
+  "expectedHistory":"History Movies and TV Shows",
+  "expectHistory":"History"
+
+
   
 }

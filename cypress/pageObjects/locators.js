@@ -49,6 +49,39 @@ const genreBiographyFilmVerify = ':nth-child(2) > [href="/genre/biography"]'
 const genreComedy = '#sidebar_subs_genre > .nav > :nth-child(6) > .nav-link'
 const genreComedyFilmVerify = ':nth-child(2) > [href="/genre/comedy"]'
 
+// crime
+
+const genreCrime = '#sidebar_subs_genre > .nav > :nth-child(7) > .nav-link'
+const genreCrimeFilmVerify = ':nth-child(2) > [href="/genre/crime"]'
+
+// Documentary
+const genreDocumentary = '#sidebar_subs_genre > .nav > :nth-child(8) > .nav-link'
+const genreDocumentaryFilmVerify = ':nth-child(2) > [href="/genre/documentary"]'
+
+// Drama
+
+const genreDrama = '#sidebar_subs_genre > .nav > :nth-child(9) > .nav-link'
+const genreDramaFilmVerify = ':nth-child(2) > [href="/genre/drama"]'
+
+// Family
+
+const genreFamily = '#sidebar_subs_genre > .nav > :nth-child(10) > .nav-link'
+const genreFamilyFilmVerify = ':nth-child(2) > [href="/genre/family"]'
+
+// fantasy
+
+const genreFantasy = '#sidebar_subs_genre > .nav > :nth-child(11) > .nav-link'
+const genreFantasyFilmVerify = ':nth-child(2) > [href="/genre/fantasy"]'
+
+// History
+
+const genreHistory = '#sidebar_subs_genre > .nav > :nth-child(12) > .nav-link'
+const genreHistoryFilmVerify = ':nth-child(2) > [href="/genre/history"]'
+
+
+
+
+
 export default {
     btnNotification,
     txtSearch,
@@ -93,10 +126,37 @@ export default {
 
     // Comedy
     genreComedy,
-    genreComedyFilmVerify
+    genreComedyFilmVerify,
 
+    // Crime
 
+    genreCrime,
+    genreCrimeFilmVerify,
 
+    // Documentary
+
+    genreDocumentary,
+    genreDocumentaryFilmVerify,
+
+    // Drama
+
+    genreDrama,
+    genreDramaFilmVerify,
+
+    // Family
+
+    genreFamily,
+    genreFamilyFilmVerify,
+
+    // Fantasy
+
+    genreFantasy,
+    genreFantasyFilmVerify,
+
+    // History
+
+    genreHistory,
+    genreHistoryFilmVerify
 
 
 }
